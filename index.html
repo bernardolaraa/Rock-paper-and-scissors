@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra,Papel e Tesoura</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Pedra, Papel e Tesoura</h1>
+    </header>
+    <main>
+        <div id="menu" class="menu">
+            <div id="choose" class="choose">
+                <div id="computer" class="computer">
+                    <button onclick="onePlayer()">1 Jogadores</button>
+                </div>
+                <div id="players" class="players">
+                    <button onclick="twoPlayers()">2 Jogadores</button>
+                </div>
+            </div> 
+            <div id="one-player" class="one-player">
+                <div class="player1">
+                    <h2>Jogador 1</h2>
+                    <input type="radio" name="group" id="rock">
+                        <label for="rock">
+                            <img src="./images/rock.jpg">
+                        </label>
+                    <input type="radio" name="group" id="paper">
+                        <label for="paper">
+                            <img src="./images/paper.jpg">
+                        </label>
+                    <input type="radio" name="group" id="scissors">
+                        <label for="scissors">
+                            <img src="./images/Scissors.jpg">
+                        </label>
+                </div>
+                <div class="play">
+                    <span class="bar"></span>
+                    <button onclick="play1()">Jogar</button>
+                    <span class="bar"></span>
+                </div>
+                <div class="computer1">
+                    <h2>Computador</h2>
+                    <input type="radio" name="group" id="rockPC">
+                        <label for="rock">
+                            <img src="./images/rock.jpg">
+                        </label>
+                    <input type="radio" name="group" id="paperPC">
+                        <label for="paper">
+                            <img src="./images/paper.jpg">
+                        </label>
+                    <input type="radio" name="group" id="scissorsPC">
+                        <label for="scissors">
+                            <img src="./images/Scissors.jpg">
+                        </label>
+                </div>
+            </div>
+            <div id="two-players" class="two-players">
+                <div class="player1">
+                    <h2>Jogador 1</h2>
+                    <input type="radio" name="group1" id="rock1">
+                        <label for="rock1">
+                            <img src="./images/rock.jpg">
+                        </label>
+                    <input type="radio" name="group1" id="paper1">
+                        <label for="paper1">
+                            <img src="./images/paper.jpg">
+                        </label>
+                    <input type="radio" name="group1" id="scissors1">
+                        <label for="scissors1">
+                            <img src="./images/Scissors.jpg">
+                        </label>
+                </div>
+                <div class="play">
+                    <span class="bar"></span>
+                    <button onclick="play2()">Jogar</button>
+                    <span class="bar"></span>
+                </div>
+                <div class="player2">
+                    <h2>Jogador 2</h2>
+                    <input type="radio" name="group2" id="rock2">
+                        <label for="rock2">
+                            <img src="./images/rock.jpg">
+                        </label>
+                    <input type="radio" name="group2" id="paper2">
+                        <label for="paper2">
+                            <img src="./images/paper.jpg">
+                        </label>
+                    <input type="radio" name="group2" id="scissors2">
+                        <label for="scissors2">
+                            <img src="./images/Scissors.jpg">
+                        </label>
+                </div>
+            </div>
+            <div id="result1">
+                <h2 id="winner">Ganhou</h2>
+                <button onclick="onePlayer()">Jogar de Novo!</button>
+            </div>
+            <div id="result2">
+                <h3 id="winner2">Ganhou</h3>
+                <button onclick="twoPlayers()">Jogar de Novo!</button>
+            </div>
+        </div>
+    </main>
+    <script src="./scripts.js"></script>
+</body>
+</html>
